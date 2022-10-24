@@ -1,0 +1,1484 @@
+
+
+============================== 2022-08-08 08:23:45.683041 | 1f44b70a-e077-4065-9d53-6b0a0076bf10 ==============================
+08:23:45.683057 [info ] [MainThread]: Running with dbt=1.1.1
+08:23:45.683497 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+08:23:45.683666 [debug] [MainThread]: Tracking: tracking
+08:23:45.683973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f345012b160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f345012b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f345012b220>]}
+08:23:45.722345 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 2 files changed.
+08:23:45.722859 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_products_clean.yml
+08:23:45.723091 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_products_clean.sql
+08:23:45.723324 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_clean.yml
+08:23:45.723523 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_clean.sql
+08:23:45.723787 [debug] [MainThread]: Partial parsing: updated file: imba_project://models/curated/order_products_prior.sql
+08:23:45.724032 [debug] [MainThread]: Partial parsing: updated file: imba_project://models/curated/user_features_1.sql
+08:23:45.736713 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+08:23:45.749850 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+08:23:45.753050 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+08:23:45.755804 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+08:23:45.764939 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+08:23:45.766258 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+08:23:45.767072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3469fb7e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f34697341f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3469fb0310>]}
+
+
+============================== 2022-08-08 09:05:25.948748 | 76883927-9c29-4bd1-ab5d-8bf9bbc7737e ==============================
+09:05:25.948786 [info ] [MainThread]: Running with dbt=1.1.1
+09:05:25.949786 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/local/airflow/dags/dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+09:05:25.950078 [debug] [MainThread]: Tracking: tracking
+09:05:25.950637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f8e3e1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f8e3e090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f8e3e2d0>]}
+09:05:26.005087 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+09:05:26.005986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '76883927-9c29-4bd1-ab5d-8bf9bbc7737e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f8561fd0>]}
+09:05:26.040348 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+09:05:26.043421 [debug] [MainThread]: Parsing macros/adapters.sql
+09:05:26.210000 [debug] [MainThread]: Parsing macros/catalog.sql
+09:05:26.217973 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+09:05:26.221941 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+09:05:26.241096 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+09:05:26.268600 [debug] [MainThread]: Parsing macros/materializations/table.sql
+09:05:26.277424 [debug] [MainThread]: Parsing macros/materializations/view.sql
+09:05:26.281043 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+09:05:26.295972 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+09:05:26.325312 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+09:05:26.354665 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+09:05:26.367970 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+09:05:26.376217 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+09:05:26.384072 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+09:05:26.390130 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+09:05:26.411559 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+09:05:26.418517 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+09:05:26.422499 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+09:05:26.426175 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+09:05:26.450750 [debug] [MainThread]: Parsing macros/etc/statement.sql
+09:05:26.464209 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+09:05:26.466834 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+09:05:26.469823 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+09:05:26.473160 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+09:05:26.477532 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+09:05:26.483168 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+09:05:26.493018 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+09:05:26.497437 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+09:05:26.501753 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+09:05:26.513852 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+09:05:26.565482 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+09:05:26.584822 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+09:05:26.589492 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+09:05:26.618703 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+09:05:26.668797 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+09:05:26.709230 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+09:05:26.757603 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+09:05:26.814648 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+09:05:26.843769 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+09:05:26.847800 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+09:05:26.862744 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+09:05:26.873922 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+09:05:26.879041 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+09:05:26.901303 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+09:05:26.910335 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+09:05:26.921126 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+09:05:26.942078 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+09:05:27.542946 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+09:05:27.567293 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+09:05:27.575199 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+09:05:27.582073 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+09:05:27.592343 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+09:05:27.597949 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+09:05:27.603618 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+09:05:27.610867 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+09:05:27.657561 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+09:05:27.660159 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+09:05:27.662568 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+09:05:27.664175 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+09:05:27.665926 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+09:05:27.667541 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+09:05:27.669059 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+09:05:27.670635 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+09:05:27.671531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f85e7050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f80afcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86f80af5d0>]}
+
+
+============================== 2022-08-08 09:07:49.700662 | 920f261a-12b1-40d5-a95a-6ac59dfdb55b ==============================
+09:07:49.700684 [info ] [MainThread]: Running with dbt=1.1.1
+09:07:49.701275 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/local/airflow/dags/dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+09:07:49.701466 [debug] [MainThread]: Tracking: tracking
+09:07:49.701814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3125842690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3125842090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3102d83290>]}
+09:07:49.724073 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+09:07:49.724567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '920f261a-12b1-40d5-a95a-6ac59dfdb55b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3102d5bf10>]}
+09:07:49.740678 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+09:07:49.742454 [debug] [MainThread]: Parsing macros/adapters.sql
+09:07:49.824399 [debug] [MainThread]: Parsing macros/catalog.sql
+09:07:49.828404 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+09:07:49.830118 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+09:07:49.839887 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+09:07:49.857297 [debug] [MainThread]: Parsing macros/materializations/table.sql
+09:07:49.862439 [debug] [MainThread]: Parsing macros/materializations/view.sql
+09:07:49.864659 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+09:07:49.873636 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+09:07:49.890366 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+09:07:49.907598 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+09:07:49.915301 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+09:07:49.920175 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+09:07:49.924593 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+09:07:49.928055 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+09:07:49.941155 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+09:07:49.945755 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+09:07:49.948539 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+09:07:49.950860 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+09:07:49.966085 [debug] [MainThread]: Parsing macros/etc/statement.sql
+09:07:49.973527 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+09:07:49.974650 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+09:07:49.975996 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+09:07:49.977469 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+09:07:49.979665 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+09:07:49.983475 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+09:07:49.990018 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+09:07:49.993096 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+09:07:49.996054 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+09:07:50.004056 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+09:07:50.035558 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+09:07:50.046953 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+09:07:50.049802 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+09:07:50.069558 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+09:07:50.101236 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+09:07:50.126423 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+09:07:50.157214 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+09:07:50.190387 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+09:07:50.210485 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+09:07:50.213346 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+09:07:50.222092 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+09:07:50.227607 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+09:07:50.229992 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+09:07:50.244367 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+09:07:50.248680 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+09:07:50.253662 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+09:07:50.267865 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+09:07:50.639521 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+09:07:50.654666 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+09:07:50.658254 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+09:07:50.661493 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+09:07:50.664873 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+09:07:50.668392 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+09:07:50.671615 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+09:07:50.674857 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+09:07:50.703722 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+09:07:50.705264 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+09:07:50.706503 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+09:07:50.707658 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+09:07:50.708912 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+09:07:50.710115 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+09:07:50.711324 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+09:07:50.712449 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+09:07:50.713156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f310229cc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3102dfbf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3102d12890>]}
+
+
+============================== 2022-08-08 09:09:12.077393 | afef0437-2488-4d1e-8b64-06ae7f9608fc ==============================
+09:09:12.077410 [info ] [MainThread]: Running with dbt=1.1.1
+09:09:12.077824 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+09:09:12.077973 [debug] [MainThread]: Tracking: tracking
+09:09:12.078257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0394bb1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0394bb12b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0394bb1310>]}
+09:09:12.104896 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 2 files changed.
+09:09:12.105366 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_clean.sql
+09:09:12.105740 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_clean.yml
+09:09:12.105928 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_products_clean.sql
+09:09:12.106112 [debug] [MainThread]: Partial parsing: added file: imba_project://models/landing/orders_products_clean.yml
+09:09:12.106399 [debug] [MainThread]: Partial parsing: updated file: imba_project://models/curated/user_features_1.sql
+09:09:12.106630 [debug] [MainThread]: Partial parsing: updated file: imba_project://models/curated/order_products_prior.sql
+09:09:12.119450 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+09:09:12.130102 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+09:09:12.132928 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+09:09:12.135617 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+09:09:12.144145 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+09:09:12.145244 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+09:09:12.153948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'afef0437-2488-4d1e-8b64-06ae7f9608fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03ae1f9490>]}
+09:09:12.161973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'afef0437-2488-4d1e-8b64-06ae7f9608fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03aea693d0>]}
+09:09:12.162355 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+09:09:12.162565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'afef0437-2488-4d1e-8b64-06ae7f9608fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0394b38c70>]}
+09:09:12.163306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0394b38ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03aea69220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03aea69310>]}
+
+
+============================== 2022-08-08 09:09:42.388631 | 063fe41d-ce29-4b08-a4fa-1361d32d827b ==============================
+09:09:42.388659 [info ] [MainThread]: Running with dbt=1.1.1
+09:09:42.389367 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/local/airflow/dags/dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+09:09:42.389603 [debug] [MainThread]: Tracking: tracking
+09:09:42.390000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae4499b090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae4499bdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae4499b110>]}
+09:09:42.418888 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+09:09:42.419387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae448dcf90>]}
+09:09:42.440369 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+09:09:42.442594 [debug] [MainThread]: Parsing macros/adapters.sql
+09:09:42.541466 [debug] [MainThread]: Parsing macros/catalog.sql
+09:09:42.545763 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+09:09:42.547693 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+09:09:42.556197 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+09:09:42.575655 [debug] [MainThread]: Parsing macros/materializations/table.sql
+09:09:42.582221 [debug] [MainThread]: Parsing macros/materializations/view.sql
+09:09:42.584974 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+09:09:42.598555 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+09:09:42.621484 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+09:09:42.643360 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+09:09:42.653096 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+09:09:42.659712 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+09:09:42.665397 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+09:09:42.670055 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+09:09:42.687680 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+09:09:42.693180 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+09:09:42.696547 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+09:09:42.699955 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+09:09:42.722233 [debug] [MainThread]: Parsing macros/etc/statement.sql
+09:09:42.732134 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+09:09:42.733572 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+09:09:42.735546 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+09:09:42.738096 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+09:09:42.741104 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+09:09:42.746272 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+09:09:42.755641 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+09:09:42.759596 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+09:09:42.763596 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+09:09:42.774654 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+09:09:42.817993 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+09:09:42.833037 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+09:09:42.836979 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+09:09:42.862864 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+09:09:42.903588 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+09:09:42.936133 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+09:09:42.976816 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+09:09:43.018698 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+09:09:43.042208 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+09:09:43.045600 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+09:09:43.055674 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+09:09:43.061717 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+09:09:43.064432 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+09:09:43.080454 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+09:09:43.085193 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+09:09:43.091414 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+09:09:43.108138 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+09:09:43.526598 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+09:09:43.543506 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+09:09:43.547550 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+09:09:43.551367 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+09:09:43.555292 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+09:09:43.559112 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+09:09:43.563080 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+09:09:43.568292 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+09:09:43.602410 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+09:09:43.604063 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+09:09:43.605313 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+09:09:43.606559 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+09:09:43.608111 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+09:09:43.609553 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+09:09:43.610844 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+09:09:43.612082 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+09:09:43.639167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae44972090>]}
+09:09:43.646937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2fdeac90>]}
+09:09:43.647370 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+09:09:43.647755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2fdeaa90>]}
+09:09:43.649838 [info ] [MainThread]: 
+09:09:43.650485 [debug] [MainThread]: Acquiring new snowflake connection "master"
+09:09:43.652295 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+09:09:43.676562 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+09:09:43.676841 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+09:09:43.677037 [debug] [ThreadPool]: Opening a new connection, currently in state init
+09:09:45.430492 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.75 seconds
+09:09:45.432797 [debug] [ThreadPool]: On list_IMBA: Close
+09:09:45.848873 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+09:09:45.854469 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+09:09:45.855013 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+09:09:45.855488 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:47.096334 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.24 seconds
+09:09:47.098161 [debug] [ThreadPool]: On list_IMBA: Close
+09:09:47.502846 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+09:09:47.510898 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+09:09:47.511333 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+09:09:47.511743 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:48.719252 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.21 seconds
+09:09:48.723980 [debug] [ThreadPool]: On list_IMBA: Close
+09:09:49.117721 [debug] [ThreadPool]: Acquiring new snowflake connection "create_IMBA_dev_curated"
+09:09:49.118197 [debug] [ThreadPool]: Acquiring new snowflake connection "create_IMBA_dev_curated"
+09:09:49.118568 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='imba', schema='dev_curated', identifier=None)"
+09:09:49.126288 [debug] [ThreadPool]: Using snowflake connection "create_IMBA_dev_curated"
+09:09:49.126527 [debug] [ThreadPool]: On create_IMBA_dev_curated: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "create_IMBA_dev_curated"} */
+create schema if not exists IMBA.dev_curated
+09:09:49.126699 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:50.755556 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.63 seconds
+09:09:50.756707 [debug] [ThreadPool]: On create_IMBA_dev_curated: Close
+09:09:51.141896 [debug] [ThreadPool]: Acquiring new snowflake connection "create_IMBA_dev_publish"
+09:09:51.142516 [debug] [ThreadPool]: Acquiring new snowflake connection "create_IMBA_dev_publish"
+09:09:51.142780 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='imba', schema='dev_publish', identifier=None)"
+09:09:51.144979 [debug] [ThreadPool]: Using snowflake connection "create_IMBA_dev_publish"
+09:09:51.145193 [debug] [ThreadPool]: On create_IMBA_dev_publish: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "create_IMBA_dev_publish"} */
+create schema if not exists IMBA.dev_publish
+09:09:51.145385 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:52.395480 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.25 seconds
+09:09:52.396786 [debug] [ThreadPool]: On create_IMBA_dev_publish: Close
+09:09:52.789101 [debug] [ThreadPool]: Acquiring new snowflake connection "create_IMBA_dev_landing"
+09:09:52.790200 [debug] [ThreadPool]: Acquiring new snowflake connection "create_IMBA_dev_landing"
+09:09:52.790610 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='imba', schema='dev_landing', identifier=None)"
+09:09:52.794277 [debug] [ThreadPool]: Using snowflake connection "create_IMBA_dev_landing"
+09:09:52.794630 [debug] [ThreadPool]: On create_IMBA_dev_landing: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "create_IMBA_dev_landing"} */
+create schema if not exists IMBA.dev_landing
+09:09:52.794938 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:53.983418 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.19 seconds
+09:09:53.986566 [debug] [ThreadPool]: On create_IMBA_dev_landing: Close
+09:09:54.381925 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_curated"
+09:09:54.392643 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_curated"
+09:09:54.392900 [debug] [ThreadPool]: On list_IMBA_dev_curated: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_curated"} */
+
+    show terse objects in IMBA.dev_curated
+09:09:54.393068 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:55.670274 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.28 seconds
+09:09:55.672163 [debug] [ThreadPool]: On list_IMBA_dev_curated: Close
+09:09:56.053303 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_publish"
+09:09:56.058156 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_publish"
+09:09:56.058614 [debug] [ThreadPool]: On list_IMBA_dev_publish: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_publish"} */
+
+    show terse objects in IMBA.dev_publish
+09:09:56.059062 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:57.486984 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.43 seconds
+09:09:57.489557 [debug] [ThreadPool]: On list_IMBA_dev_publish: Close
+09:09:57.879674 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_landing"
+09:09:57.882627 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_landing"
+09:09:57.883044 [debug] [ThreadPool]: On list_IMBA_dev_landing: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_landing"} */
+
+    show terse objects in IMBA.dev_landing
+09:09:57.883312 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:09:59.099143 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.22 seconds
+09:09:59.101746 [debug] [ThreadPool]: On list_IMBA_dev_landing: Close
+09:09:59.491516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae44863a10>]}
+09:09:59.492940 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+09:09:59.493816 [info ] [MainThread]: 
+09:09:59.499020 [debug] [Thread-1  ]: Began running node model.imba_project.orders_clean
+09:09:59.499813 [info ] [Thread-1  ]: 1 of 8 START table model dev_landing.orders_clean .............................. [RUN]
+09:09:59.501055 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.orders_clean"
+09:09:59.501566 [debug] [Thread-1  ]: Began compiling node model.imba_project.orders_clean
+09:09:59.502026 [debug] [Thread-1  ]: Compiling model.imba_project.orders_clean
+09:09:59.506940 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.orders_clean"
+09:09:59.507460 [debug] [Thread-1  ]: finished collecting timing info
+09:09:59.507758 [debug] [Thread-1  ]: Began executing node model.imba_project.orders_clean
+09:09:59.596365 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.orders_clean"
+09:09:59.597691 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.orders_clean"
+09:09:59.597915 [debug] [Thread-1  ]: On model.imba_project.orders_clean: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.orders_clean"} */
+
+
+      create or replace transient table IMBA.dev_landing.orders_clean  as
+      (
+
+select 
+    cast(order_id as number), 
+    cast(user_id as number),
+    eval_set, 
+    cast(order_number as number),
+    cast(order_dow as number),
+    cast(order_hour_of_day as number),
+    cast(days_since_prior_order as number)
+    
+from imba.raw.orders
+      );
+09:09:59.598120 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+09:10:01.045327 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a625a6-0000-0d5a-0000-00001b05a6e5
+09:10:01.045846 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002022 (42601): SQL compilation error:
+Missing column specification
+09:10:01.046508 [debug] [Thread-1  ]: finished collecting timing info
+09:10:01.046894 [debug] [Thread-1  ]: On model.imba_project.orders_clean: Close
+09:10:01.439012 [debug] [Thread-1  ]: Database Error in model orders_clean (models/landing/orders_clean.sql)
+  002022 (42601): SQL compilation error:
+  Missing column specification
+  compiled SQL at target/run/imba_project/models/landing/orders_clean.sql
+09:10:01.439425 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2e87b7d0>]}
+09:10:01.439869 [error] [Thread-1  ]: 1 of 8 ERROR creating table model dev_landing.orders_clean ..................... [[31mERROR[0m in 1.94s]
+09:10:01.440402 [debug] [Thread-1  ]: Finished running node model.imba_project.orders_clean
+09:10:01.440660 [debug] [Thread-1  ]: Began running node model.imba_project.orders_products_clean
+09:10:01.440988 [info ] [Thread-1  ]: 2 of 8 START table model dev_landing.orders_products_clean ..................... [RUN]
+09:10:01.441558 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.orders_products_clean"
+09:10:01.441759 [debug] [Thread-1  ]: Began compiling node model.imba_project.orders_products_clean
+09:10:01.441982 [debug] [Thread-1  ]: Compiling model.imba_project.orders_products_clean
+09:10:01.446110 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.orders_products_clean"
+09:10:01.446928 [debug] [Thread-1  ]: finished collecting timing info
+09:10:01.447183 [debug] [Thread-1  ]: Began executing node model.imba_project.orders_products_clean
+09:10:01.449717 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.orders_products_clean"
+09:10:01.450714 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.orders_products_clean"
+09:10:01.450899 [debug] [Thread-1  ]: On model.imba_project.orders_products_clean: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.orders_products_clean"} */
+
+
+      create or replace transient table IMBA.dev_landing.orders_products_clean  as
+      (
+
+select 
+    cast(order_id as number) as order_id, 
+    cast(product_id as number) as product_id,
+    cast(add_to_cart_order as number) as add_to_cart_order,
+    cast(reordered as number) as reordered
+
+from imba.raw.orders_products
+      );
+09:10:01.451087 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+09:10:04.233956 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a625a6-0000-0d5a-0000-00001b05a6e9
+09:10:04.234233 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 100038 (22018): Numeric value 'order_id' is not recognized
+09:10:04.234639 [debug] [Thread-1  ]: finished collecting timing info
+09:10:04.234864 [debug] [Thread-1  ]: On model.imba_project.orders_products_clean: Close
+09:10:04.616309 [debug] [Thread-1  ]: Database Error in model orders_products_clean (models/landing/orders_products_clean.sql)
+  100038 (22018): Numeric value 'order_id' is not recognized
+  compiled SQL at target/run/imba_project/models/landing/orders_products_clean.sql
+09:10:04.616819 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '063fe41d-ce29-4b08-a4fa-1361d32d827b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2fdd4750>]}
+09:10:04.617298 [error] [Thread-1  ]: 2 of 8 ERROR creating table model dev_landing.orders_products_clean ............ [[31mERROR[0m in 3.18s]
+09:10:04.617880 [debug] [Thread-1  ]: Finished running node model.imba_project.orders_products_clean
+09:10:04.618211 [debug] [Thread-1  ]: Began running node model.imba_project.user_features_1
+09:10:04.618456 [info ] [Thread-1  ]: 3 of 8 SKIP relation dev_curated.user_features_1 ............................... [[33mSKIP[0m]
+09:10:04.619313 [debug] [Thread-1  ]: Finished running node model.imba_project.user_features_1
+09:10:04.620077 [debug] [Thread-1  ]: Began running node model.imba_project.order_products_prior
+09:10:04.620342 [info ] [Thread-1  ]: 4 of 8 SKIP relation dev_curated.order_products_prior .......................... [[33mSKIP[0m]
+09:10:04.620809 [debug] [Thread-1  ]: Finished running node model.imba_project.order_products_prior
+09:10:04.621719 [debug] [Thread-1  ]: Began running node model.imba_project.prd_features
+09:10:04.621979 [info ] [Thread-1  ]: 5 of 8 SKIP relation dev_curated.prd_features .................................. [[33mSKIP[0m]
+09:10:04.622690 [debug] [Thread-1  ]: Finished running node model.imba_project.prd_features
+09:10:04.623030 [debug] [Thread-1  ]: Began running node model.imba_project.up_features
+09:10:04.623328 [info ] [Thread-1  ]: 6 of 8 SKIP relation dev_curated.up_features ................................... [[33mSKIP[0m]
+09:10:04.623873 [debug] [Thread-1  ]: Finished running node model.imba_project.up_features
+09:10:04.624144 [debug] [Thread-1  ]: Began running node model.imba_project.user_features_2
+09:10:04.624430 [info ] [Thread-1  ]: 7 of 8 SKIP relation dev_curated.user_features_2 ............................... [[33mSKIP[0m]
+09:10:04.624965 [debug] [Thread-1  ]: Finished running node model.imba_project.user_features_2
+09:10:04.625819 [debug] [Thread-1  ]: Began running node model.imba_project.features_output
+09:10:04.626095 [info ] [Thread-1  ]: 8 of 8 SKIP relation dev_publish.features_output ............................... [[33mSKIP[0m]
+09:10:04.626668 [debug] [Thread-1  ]: Finished running node model.imba_project.features_output
+09:10:04.642531 [debug] [MainThread]: Acquiring new snowflake connection "master"
+09:10:04.643099 [info ] [MainThread]: 
+09:10:04.643467 [info ] [MainThread]: Finished running 8 table models in 20.99s.
+09:10:04.643846 [debug] [MainThread]: Connection 'master' was properly closed.
+09:10:04.644027 [debug] [MainThread]: Connection 'model.imba_project.orders_products_clean' was properly closed.
+09:10:04.651017 [info ] [MainThread]: 
+09:10:04.651431 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+09:10:04.651862 [info ] [MainThread]: 
+09:10:04.652192 [error] [MainThread]: [33mDatabase Error in model orders_clean (models/landing/orders_clean.sql)[0m
+09:10:04.652519 [error] [MainThread]:   002022 (42601): SQL compilation error:
+09:10:04.652966 [error] [MainThread]:   Missing column specification
+09:10:04.653316 [error] [MainThread]:   compiled SQL at target/run/imba_project/models/landing/orders_clean.sql
+09:10:04.653675 [info ] [MainThread]: 
+09:10:04.654075 [error] [MainThread]: [33mDatabase Error in model orders_products_clean (models/landing/orders_products_clean.sql)[0m
+09:10:04.654649 [error] [MainThread]:   100038 (22018): Numeric value 'order_id' is not recognized
+09:10:04.655125 [error] [MainThread]:   compiled SQL at target/run/imba_project/models/landing/orders_products_clean.sql
+09:10:04.655504 [info ] [MainThread]: 
+09:10:04.655856 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=6 TOTAL=8
+09:10:04.656334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2e98b850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2e9d3cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae2e9d3710>]}
+
+
+============================== 2022-08-08 09:12:17.838009 | 6aafe7f6-8d27-4bc7-a4ca-2933f692ccf5 ==============================
+09:12:17.838028 [info ] [MainThread]: Running with dbt=1.1.1
+09:12:17.838623 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+09:12:17.838847 [debug] [MainThread]: Tracking: tracking
+09:12:17.839314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f944c3772e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f944c377340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f944c3773a0>]}
+09:12:17.859664 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+09:12:17.859960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6aafe7f6-8d27-4bc7-a4ca-2933f692ccf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f944c388790>]}
+09:12:17.870698 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+09:12:17.872066 [debug] [MainThread]: Parsing macros/adapters.sql
+09:12:17.906763 [debug] [MainThread]: Parsing macros/catalog.sql
+09:12:17.908489 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+09:12:17.909425 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+09:12:17.912900 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+09:12:17.920882 [debug] [MainThread]: Parsing macros/materializations/table.sql
+09:12:17.923626 [debug] [MainThread]: Parsing macros/materializations/view.sql
+09:12:17.924938 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+09:12:17.929740 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+09:12:17.938423 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+09:12:17.947355 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+09:12:17.951237 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+09:12:17.953832 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+09:12:17.956306 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+09:12:17.958236 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+09:12:17.965081 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+09:12:17.967476 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+09:12:17.969021 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+09:12:17.970480 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+09:12:17.978828 [debug] [MainThread]: Parsing macros/etc/statement.sql
+09:12:17.983371 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+09:12:17.984100 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+09:12:17.984992 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+09:12:17.985907 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+09:12:17.987320 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+09:12:17.989722 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+09:12:17.993802 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+09:12:17.995794 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+09:12:17.997665 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+09:12:18.002388 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+09:12:18.019892 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+09:12:18.026410 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+09:12:18.028156 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+09:12:18.039448 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+09:12:18.057176 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+09:12:18.070420 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+09:12:18.086573 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+09:12:18.103153 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+09:12:18.113568 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+09:12:18.115093 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+09:12:18.119725 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+09:12:18.122483 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+09:12:18.123819 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+09:12:18.131070 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+09:12:18.133595 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+09:12:18.136705 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+09:12:18.144378 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+09:12:18.331348 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+09:12:18.341177 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+09:12:18.343985 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+09:12:18.346499 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+09:12:18.348886 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+09:12:18.351133 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+09:12:18.353804 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+09:12:18.357000 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+09:12:18.371032 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+09:12:18.372185 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+09:12:18.373147 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+09:12:18.373998 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+09:12:18.374882 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+09:12:18.375698 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+09:12:18.376513 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+09:12:18.377309 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+09:12:18.391574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6aafe7f6-8d27-4bc7-a4ca-2933f692ccf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94659bc970>]}
+09:12:18.396914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6aafe7f6-8d27-4bc7-a4ca-2933f692ccf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94659a5eb0>]}
+09:12:18.397231 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+09:12:18.397449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6aafe7f6-8d27-4bc7-a4ca-2933f692ccf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f944c3883d0>]}
+09:12:18.398212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94659ef4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94662bf130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94662bf400>]}
+
+
+============================== 2022-08-08 09:13:15.660665 | c7d13688-8100-40ea-b486-58f3a35e3c13 ==============================
+09:13:15.660703 [info ] [MainThread]: Running with dbt=1.1.1
+09:13:15.661115 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+09:13:15.661270 [debug] [MainThread]: Tracking: tracking
+09:13:15.661550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7540ff1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7540ff250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7540ff2b0>]}
+09:13:15.703473 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+09:13:15.703749 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+09:13:15.709374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c7d13688-8100-40ea-b486-58f3a35e3c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc76dfc7880>]}
+09:13:15.714601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c7d13688-8100-40ea-b486-58f3a35e3c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc76dfdc8e0>]}
+09:13:15.715192 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+09:13:15.715578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7d13688-8100-40ea-b486-58f3a35e3c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc76dfdc790>]}
+09:13:15.716678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc76dfdca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc76dfdc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc76dfdc340>]}
+
+
+============================== 2022-08-08 09:13:18.847153 | 0c4e0513-2820-4005-9f02-636349c1db0b ==============================
+09:13:18.847169 [info ] [MainThread]: Running with dbt=1.1.1
+09:13:18.847698 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+09:13:18.848108 [debug] [MainThread]: Tracking: tracking
+09:13:18.848633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd98cecb220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd98cecb280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd98cecb2e0>]}
+09:13:18.879239 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+09:13:18.879491 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+09:13:18.885625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c4e0513-2820-4005-9f02-636349c1db0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9a6d958b0>]}
+09:13:18.890942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c4e0513-2820-4005-9f02-636349c1db0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9a6daa910>]}
+09:13:18.891292 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+09:13:18.891526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c4e0513-2820-4005-9f02-636349c1db0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9a6daa7c0>]}
+09:13:18.892248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9a6daaa30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9a6daa700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9a6daa370>]}
+
+
+============================== 2022-08-08 09:13:41.530090 | 0b9c131c-8906-44c7-b3fa-daaa5fb0697a ==============================
+09:13:41.530115 [info ] [MainThread]: Running with dbt=1.1.1
+09:13:41.530810 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/local/airflow/dags/dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+09:13:41.531071 [debug] [MainThread]: Tracking: tracking
+09:13:41.531456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa319281090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa319281150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3189c3e90>]}
+09:13:41.566744 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+09:13:41.567266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa31899cf50>]}
+09:13:41.589462 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+09:13:41.591893 [debug] [MainThread]: Parsing macros/adapters.sql
+09:13:41.693931 [debug] [MainThread]: Parsing macros/catalog.sql
+09:13:41.698520 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+09:13:41.700407 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+09:13:41.708917 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+09:13:41.728546 [debug] [MainThread]: Parsing macros/materializations/table.sql
+09:13:41.735335 [debug] [MainThread]: Parsing macros/materializations/view.sql
+09:13:41.738158 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+09:13:41.749886 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+09:13:41.771816 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+09:13:41.793037 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+09:13:41.802438 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+09:13:41.808553 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+09:13:41.814017 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+09:13:41.818381 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+09:13:41.834627 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+09:13:41.839804 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+09:13:41.842816 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+09:13:41.845635 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+09:13:41.864372 [debug] [MainThread]: Parsing macros/etc/statement.sql
+09:13:41.873762 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+09:13:41.875090 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+09:13:41.876602 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+09:13:41.878300 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+09:13:41.880999 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+09:13:41.885564 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+09:13:41.893543 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+09:13:41.897139 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+09:13:41.900642 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+09:13:41.910397 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+09:13:41.947608 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+09:13:41.960906 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+09:13:41.964066 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+09:13:41.986608 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+09:13:42.021551 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+09:13:42.049865 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+09:13:42.084519 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+09:13:42.120476 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+09:13:42.140453 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+09:13:42.143446 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+09:13:42.152299 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+09:13:42.158143 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+09:13:42.160835 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+09:13:42.175543 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+09:13:42.180116 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+09:13:42.185497 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+09:13:42.200665 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+09:13:42.677330 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+09:13:42.703581 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+09:13:42.709978 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+09:13:42.714994 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+09:13:42.719581 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+09:13:42.723996 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+09:13:42.730407 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+09:13:42.736007 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+09:13:42.776473 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+09:13:42.778127 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+09:13:42.780028 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+09:13:42.781641 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+09:13:42.783209 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+09:13:42.784627 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+09:13:42.785960 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+09:13:42.787424 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+09:13:42.820074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa318976090>]}
+09:13:42.829605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3180e77d0>]}
+09:13:42.830089 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+09:13:42.830505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3180e7d10>]}
+09:13:42.832824 [info ] [MainThread]: 
+09:13:42.833620 [debug] [MainThread]: Acquiring new snowflake connection "master"
+09:13:42.835734 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+09:13:42.861624 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+09:13:42.862008 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+09:13:42.862230 [debug] [ThreadPool]: Opening a new connection, currently in state init
+09:13:44.383533 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.52 seconds
+09:13:44.385811 [debug] [ThreadPool]: On list_IMBA: Close
+09:13:44.850271 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+09:13:44.854081 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+09:13:44.854408 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+09:13:44.854611 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:13:46.377801 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.52 seconds
+09:13:46.379805 [debug] [ThreadPool]: On list_IMBA: Close
+09:13:46.782984 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+09:13:46.786304 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+09:13:46.786652 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+09:13:46.786883 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:13:47.958109 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.17 seconds
+09:13:47.963235 [debug] [ThreadPool]: On list_IMBA: Close
+09:13:48.344785 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_curated"
+09:13:48.355674 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_curated"
+09:13:48.355912 [debug] [ThreadPool]: On list_IMBA_dev_curated: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_curated"} */
+
+    show terse objects in IMBA.dev_curated
+09:13:48.356081 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:13:49.551665 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.2 seconds
+09:13:49.555942 [debug] [ThreadPool]: On list_IMBA_dev_curated: Close
+09:13:49.922866 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_landing"
+09:13:49.925368 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_landing"
+09:13:49.925608 [debug] [ThreadPool]: On list_IMBA_dev_landing: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_landing"} */
+
+    show terse objects in IMBA.dev_landing
+09:13:49.925768 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:13:51.116498 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.19 seconds
+09:13:51.118124 [debug] [ThreadPool]: On list_IMBA_dev_landing: Close
+09:13:51.518073 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_publish"
+09:13:51.525777 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_publish"
+09:13:51.526340 [debug] [ThreadPool]: On list_IMBA_dev_publish: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_publish"} */
+
+    show terse objects in IMBA.dev_publish
+09:13:51.526711 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:13:52.691696 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.16 seconds
+09:13:52.693252 [debug] [ThreadPool]: On list_IMBA_dev_publish: Close
+09:13:53.054108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa318927810>]}
+09:13:53.054962 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+09:13:53.055409 [info ] [MainThread]: 
+09:13:53.057789 [debug] [Thread-1  ]: Began running node model.imba_project.orders_clean
+09:13:53.058204 [info ] [Thread-1  ]: 1 of 8 START table model dev_landing.orders_clean .............................. [RUN]
+09:13:53.058779 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.orders_clean"
+09:13:53.059031 [debug] [Thread-1  ]: Began compiling node model.imba_project.orders_clean
+09:13:53.059296 [debug] [Thread-1  ]: Compiling model.imba_project.orders_clean
+09:13:53.063257 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.orders_clean"
+09:13:53.063683 [debug] [Thread-1  ]: finished collecting timing info
+09:13:53.063939 [debug] [Thread-1  ]: Began executing node model.imba_project.orders_clean
+09:13:53.103512 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.orders_clean"
+09:13:53.104893 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.orders_clean"
+09:13:53.105092 [debug] [Thread-1  ]: On model.imba_project.orders_clean: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.orders_clean"} */
+
+
+      create or replace transient table IMBA.dev_landing.orders_clean  as
+      (
+
+select 
+    cast(order_id as number) as order_id, 
+    cast(user_id as number) as user_id,
+    eval_set, 
+    cast(order_number as number) as order_number,
+    cast(order_dow as number) as order_dow,
+    cast(order_hour_of_day as number) as order_hour_of_day,
+    cast(days_since_prior_order as number) as days_since_prior_order
+    
+from imba.raw.orders
+      );
+09:13:53.105272 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+09:13:54.863601 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a625a9-0000-0d5a-0000-00001b05a6fd
+09:13:54.863961 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 100038 (22018): Numeric value 'order_id' is not recognized
+09:13:54.864590 [debug] [Thread-1  ]: finished collecting timing info
+09:13:54.865014 [debug] [Thread-1  ]: On model.imba_project.orders_clean: Close
+09:13:55.244641 [debug] [Thread-1  ]: Database Error in model orders_clean (models/landing/orders_clean.sql)
+  100038 (22018): Numeric value 'order_id' is not recognized
+  compiled SQL at target/run/imba_project/models/landing/orders_clean.sql
+09:13:55.245248 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2faa527d0>]}
+09:13:55.245852 [error] [Thread-1  ]: 1 of 8 ERROR creating table model dev_landing.orders_clean ..................... [[31mERROR[0m in 2.19s]
+09:13:55.246662 [debug] [Thread-1  ]: Finished running node model.imba_project.orders_clean
+09:13:55.247152 [debug] [Thread-1  ]: Began running node model.imba_project.orders_products_clean
+09:13:55.248023 [info ] [Thread-1  ]: 2 of 8 START table model dev_landing.orders_products_clean ..................... [RUN]
+09:13:55.249009 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.orders_products_clean"
+09:13:55.249242 [debug] [Thread-1  ]: Began compiling node model.imba_project.orders_products_clean
+09:13:55.249479 [debug] [Thread-1  ]: Compiling model.imba_project.orders_products_clean
+09:13:55.253621 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.orders_products_clean"
+09:13:55.254056 [debug] [Thread-1  ]: finished collecting timing info
+09:13:55.254259 [debug] [Thread-1  ]: Began executing node model.imba_project.orders_products_clean
+09:13:55.256925 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.orders_products_clean"
+09:13:55.258088 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.orders_products_clean"
+09:13:55.258278 [debug] [Thread-1  ]: On model.imba_project.orders_products_clean: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.orders_products_clean"} */
+
+
+      create or replace transient table IMBA.dev_landing.orders_products_clean  as
+      (
+
+select 
+    cast(order_id as number) as order_id, 
+    cast(product_id as number) as product_id,
+    cast(add_to_cart_order as number) as add_to_cart_order,
+    cast(reordered as number) as reordered
+
+from imba.raw.orders_products
+      );
+09:13:55.258454 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+09:13:57.292332 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a625a9-0000-0d58-0000-00001b0586e5
+09:13:57.292583 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 100038 (22018): Numeric value 'order_id' is not recognized
+09:13:57.292900 [debug] [Thread-1  ]: finished collecting timing info
+09:13:57.293092 [debug] [Thread-1  ]: On model.imba_project.orders_products_clean: Close
+09:13:57.683335 [debug] [Thread-1  ]: Database Error in model orders_products_clean (models/landing/orders_products_clean.sql)
+  100038 (22018): Numeric value 'order_id' is not recognized
+  compiled SQL at target/run/imba_project/models/landing/orders_products_clean.sql
+09:13:57.683746 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b9c131c-8906-44c7-b3fa-daaa5fb0697a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f8c43d50>]}
+09:13:57.684162 [error] [Thread-1  ]: 2 of 8 ERROR creating table model dev_landing.orders_products_clean ............ [[31mERROR[0m in 2.43s]
+09:13:57.684657 [debug] [Thread-1  ]: Finished running node model.imba_project.orders_products_clean
+09:13:57.684903 [debug] [Thread-1  ]: Began running node model.imba_project.user_features_1
+09:13:57.685148 [info ] [Thread-1  ]: 3 of 8 SKIP relation dev_curated.user_features_1 ............................... [[33mSKIP[0m]
+09:13:57.685869 [debug] [Thread-1  ]: Finished running node model.imba_project.user_features_1
+09:13:57.686520 [debug] [Thread-1  ]: Began running node model.imba_project.order_products_prior
+09:13:57.686714 [info ] [Thread-1  ]: 4 of 8 SKIP relation dev_curated.order_products_prior .......................... [[33mSKIP[0m]
+09:13:57.687153 [debug] [Thread-1  ]: Finished running node model.imba_project.order_products_prior
+09:13:57.687887 [debug] [Thread-1  ]: Began running node model.imba_project.prd_features
+09:13:57.688105 [info ] [Thread-1  ]: 5 of 8 SKIP relation dev_curated.prd_features .................................. [[33mSKIP[0m]
+09:13:57.688497 [debug] [Thread-1  ]: Finished running node model.imba_project.prd_features
+09:13:57.688772 [debug] [Thread-1  ]: Began running node model.imba_project.up_features
+09:13:57.689068 [info ] [Thread-1  ]: 6 of 8 SKIP relation dev_curated.up_features ................................... [[33mSKIP[0m]
+09:13:57.689532 [debug] [Thread-1  ]: Finished running node model.imba_project.up_features
+09:13:57.689759 [debug] [Thread-1  ]: Began running node model.imba_project.user_features_2
+09:13:57.690083 [info ] [Thread-1  ]: 7 of 8 SKIP relation dev_curated.user_features_2 ............................... [[33mSKIP[0m]
+09:13:57.690501 [debug] [Thread-1  ]: Finished running node model.imba_project.user_features_2
+09:13:57.691066 [debug] [Thread-1  ]: Began running node model.imba_project.features_output
+09:13:57.691265 [info ] [Thread-1  ]: 8 of 8 SKIP relation dev_publish.features_output ............................... [[33mSKIP[0m]
+09:13:57.691693 [debug] [Thread-1  ]: Finished running node model.imba_project.features_output
+09:13:57.698000 [debug] [MainThread]: Acquiring new snowflake connection "master"
+09:13:57.698492 [info ] [MainThread]: 
+09:13:57.698816 [info ] [MainThread]: Finished running 8 table models in 14.87s.
+09:13:57.699108 [debug] [MainThread]: Connection 'master' was properly closed.
+09:13:57.699275 [debug] [MainThread]: Connection 'model.imba_project.orders_products_clean' was properly closed.
+09:13:57.705821 [info ] [MainThread]: 
+09:13:57.706182 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+09:13:57.706583 [info ] [MainThread]: 
+09:13:57.706870 [error] [MainThread]: [33mDatabase Error in model orders_clean (models/landing/orders_clean.sql)[0m
+09:13:57.707158 [error] [MainThread]:   100038 (22018): Numeric value 'order_id' is not recognized
+09:13:57.707446 [error] [MainThread]:   compiled SQL at target/run/imba_project/models/landing/orders_clean.sql
+09:13:57.707718 [info ] [MainThread]: 
+09:13:57.707990 [error] [MainThread]: [33mDatabase Error in model orders_products_clean (models/landing/orders_products_clean.sql)[0m
+09:13:57.708271 [error] [MainThread]:   100038 (22018): Numeric value 'order_id' is not recognized
+09:13:57.708536 [error] [MainThread]:   compiled SQL at target/run/imba_project/models/landing/orders_products_clean.sql
+09:13:57.708816 [info ] [MainThread]: 
+09:13:57.709087 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=6 TOTAL=8
+09:13:57.709515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2fa929690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f8c39250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f8c39050>]}
+
+
+============================== 2022-08-08 10:05:02.240158 | da6735e9-a00e-4541-8af2-20efc3f5457d ==============================
+10:05:02.240177 [info ] [MainThread]: Running with dbt=1.1.1
+10:05:02.240795 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:05:02.241099 [debug] [MainThread]: Tracking: tracking
+10:05:02.241695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92027d4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92027d41f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92027d4250>]}
+10:05:02.272767 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+10:05:02.273265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'da6735e9-a00e-4541-8af2-20efc3f5457d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92027e6310>]}
+10:05:02.291814 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+10:05:02.293782 [debug] [MainThread]: Parsing macros/adapters.sql
+10:05:02.345381 [debug] [MainThread]: Parsing macros/catalog.sql
+10:05:02.347720 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+10:05:02.348890 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+10:05:02.354771 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+10:05:02.365910 [debug] [MainThread]: Parsing macros/materializations/table.sql
+10:05:02.369753 [debug] [MainThread]: Parsing macros/materializations/view.sql
+10:05:02.371391 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+10:05:02.377617 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+10:05:02.388901 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+10:05:02.400514 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+10:05:02.405597 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+10:05:02.408982 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+10:05:02.412101 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+10:05:02.414617 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+10:05:02.423205 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+10:05:02.426231 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+10:05:02.428164 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+10:05:02.429972 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+10:05:02.439867 [debug] [MainThread]: Parsing macros/etc/statement.sql
+10:05:02.444870 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+10:05:02.445741 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+10:05:02.446753 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+10:05:02.447805 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+10:05:02.449390 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+10:05:02.452025 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+10:05:02.456459 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+10:05:02.458548 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+10:05:02.460591 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+10:05:02.465921 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+10:05:02.484603 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+10:05:02.491823 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+10:05:02.493754 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+10:05:02.505707 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+10:05:02.524363 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+10:05:02.538706 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+10:05:02.558935 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+10:05:02.577325 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+10:05:02.589403 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+10:05:02.591390 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+10:05:02.596782 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+10:05:02.599919 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+10:05:02.601489 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+10:05:02.609656 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+10:05:02.612501 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+10:05:02.615774 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+10:05:02.624054 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+10:05:02.847790 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+10:05:02.858285 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+10:05:02.861715 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+10:05:02.866055 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+10:05:02.869172 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+10:05:02.871866 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+10:05:02.874929 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+10:05:02.878297 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+10:05:02.894997 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+10:05:02.896241 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+10:05:02.897237 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+10:05:02.898146 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+10:05:02.898999 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+10:05:02.899847 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+10:05:02.900716 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+10:05:02.901590 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+10:05:02.922202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'da6735e9-a00e-4541-8af2-20efc3f5457d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f921ce3d820>]}
+10:05:02.928882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'da6735e9-a00e-4541-8af2-20efc3f5457d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f921d740dc0>]}
+10:05:02.929233 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:05:02.929462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da6735e9-a00e-4541-8af2-20efc3f5457d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92027e5850>]}
+10:05:02.930231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92027e5880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f921d7395e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f921d7399a0>]}
+
+
+============================== 2022-08-08 10:05:16.042536 | 3ec785c3-0c1e-428a-8fa8-d7b2f5d9e4ca ==============================
+10:05:16.042564 [info ] [MainThread]: Running with dbt=1.1.1
+10:05:16.043376 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:05:16.043747 [debug] [MainThread]: Tracking: tracking
+10:05:16.044299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b274f1280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b274f12e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b274f1340>]}
+10:05:16.094982 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+10:05:16.095754 [debug] [MainThread]: Partial parsing: updated file: imba_project://models/landing/orders_clean.sql
+10:05:16.119719 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+10:05:16.148820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ec785c3-0c1e-428a-8fa8-d7b2f5d9e4ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b4137ba60>]}
+10:05:16.156276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ec785c3-0c1e-428a-8fa8-d7b2f5d9e4ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b413a4e80>]}
+10:05:16.157036 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:05:16.157397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ec785c3-0c1e-428a-8fa8-d7b2f5d9e4ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b41396df0>]}
+10:05:16.158930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b41354070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b41396df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b413a4e50>]}
+
+
+============================== 2022-08-08 10:05:29.525331 | 9154a0f5-9336-4f7d-836a-7bf7aa69d354 ==============================
+10:05:29.525348 [info ] [MainThread]: Running with dbt=1.1.1
+10:05:29.525788 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:05:29.525958 [debug] [MainThread]: Tracking: tracking
+10:05:29.526338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4238c82190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4238c821f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4238c82250>]}
+10:05:29.555403 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+10:05:29.555924 [debug] [MainThread]: Partial parsing: updated file: imba_project://models/landing/orders_products_clean.sql
+10:05:29.568296 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+10:05:29.587554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9154a0f5-9336-4f7d-836a-7bf7aa69d354', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4252b06970>]}
+10:05:29.592774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9154a0f5-9336-4f7d-836a-7bf7aa69d354', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4252b31eb0>]}
+10:05:29.593108 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:05:29.593338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9154a0f5-9336-4f7d-836a-7bf7aa69d354', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4252b24c10>]}
+10:05:29.594154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4252ae2af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4238c821f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4252b24c10>]}
+
+
+============================== 2022-08-08 10:05:55.608352 | e64fe55c-0ca6-4a39-8bb9-a7b275af9a25 ==============================
+10:05:55.608391 [info ] [MainThread]: Running with dbt=1.1.1
+10:05:55.609264 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:05:55.609568 [debug] [MainThread]: Tracking: tracking
+10:05:55.610042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53374c4160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53374c41c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53374c4220>]}
+10:05:55.679744 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+10:05:55.680181 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+10:05:55.691569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e64fe55c-0ca6-4a39-8bb9-a7b275af9a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f535138a7f0>]}
+10:05:55.700632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e64fe55c-0ca6-4a39-8bb9-a7b275af9a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53513a07c0>]}
+10:05:55.701404 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:05:55.702191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e64fe55c-0ca6-4a39-8bb9-a7b275af9a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53513a06d0>]}
+10:05:55.704357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53513a0970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53513a0790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53513a02b0>]}
+
+
+============================== 2022-08-08 10:07:15.334481 | c349c78d-b351-43a2-8abd-4c2c765cf451 ==============================
+10:07:15.334509 [info ] [MainThread]: Running with dbt=1.1.1
+10:07:15.335501 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/local/airflow/dags/dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+10:07:15.335761 [debug] [MainThread]: Tracking: tracking
+10:07:15.336222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8aff7a290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8aff7a410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8aff7a1d0>]}
+10:07:15.365846 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+10:07:15.366597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8d2c4b290>]}
+10:07:15.398722 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+10:07:15.400999 [debug] [MainThread]: Parsing macros/adapters.sql
+10:07:15.499944 [debug] [MainThread]: Parsing macros/catalog.sql
+10:07:15.504268 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+10:07:15.506169 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+10:07:15.514735 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+10:07:15.533446 [debug] [MainThread]: Parsing macros/materializations/table.sql
+10:07:15.539880 [debug] [MainThread]: Parsing macros/materializations/view.sql
+10:07:15.542694 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+10:07:15.554020 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+10:07:15.576065 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+10:07:15.597293 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+10:07:15.609392 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+10:07:15.616303 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+10:07:15.622053 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+10:07:15.626587 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+10:07:15.642735 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+10:07:15.647847 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+10:07:15.650945 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+10:07:15.654023 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+10:07:15.674061 [debug] [MainThread]: Parsing macros/etc/statement.sql
+10:07:15.683740 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+10:07:15.685169 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+10:07:15.686794 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+10:07:15.688550 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+10:07:15.691322 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+10:07:15.696023 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+10:07:15.704242 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+10:07:15.707926 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+10:07:15.711543 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+10:07:15.721647 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+10:07:15.759016 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+10:07:15.772665 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+10:07:15.775948 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+10:07:15.799497 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+10:07:15.835847 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+10:07:15.865264 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+10:07:15.900361 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+10:07:15.937267 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+10:07:15.960516 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+10:07:15.963700 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+10:07:15.974529 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+10:07:15.981397 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+10:07:15.984233 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+10:07:16.000123 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+10:07:16.004888 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+10:07:16.011339 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+10:07:16.029666 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+10:07:16.518766 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+10:07:16.538307 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+10:07:16.543401 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+10:07:16.548293 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+10:07:16.552620 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+10:07:16.556841 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+10:07:16.561428 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+10:07:16.567006 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+10:07:16.602936 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+10:07:16.604549 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+10:07:16.605949 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+10:07:16.607263 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+10:07:16.608745 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+10:07:16.610058 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+10:07:16.611784 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+10:07:16.613298 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+10:07:16.644156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8aff80990>]}
+10:07:16.652713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8af466b50>]}
+10:07:16.653141 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:07:16.653529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8af466350>]}
+10:07:16.655708 [info ] [MainThread]: 
+10:07:16.656367 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:07:16.658247 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+10:07:16.682386 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+10:07:16.682713 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+10:07:16.682920 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:07:18.221993 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.54 seconds
+10:07:18.224168 [debug] [ThreadPool]: On list_IMBA: Close
+10:07:18.607548 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+10:07:18.610979 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+10:07:18.611208 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+10:07:18.611429 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:07:20.019972 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.41 seconds
+10:07:20.022231 [debug] [ThreadPool]: On list_IMBA: Close
+10:07:20.402871 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA"
+10:07:20.405188 [debug] [ThreadPool]: Using snowflake connection "list_IMBA"
+10:07:20.405440 [debug] [ThreadPool]: On list_IMBA: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA"} */
+
+    show terse schemas in database IMBA
+    limit 10000
+10:07:20.405621 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:07:21.639927 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.23 seconds
+10:07:21.641892 [debug] [ThreadPool]: On list_IMBA: Close
+10:07:22.021513 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_landing"
+10:07:22.032362 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_landing"
+10:07:22.032579 [debug] [ThreadPool]: On list_IMBA_dev_landing: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_landing"} */
+
+    show terse objects in IMBA.dev_landing
+10:07:22.032790 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:07:23.330236 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.3 seconds
+10:07:23.331845 [debug] [ThreadPool]: On list_IMBA_dev_landing: Close
+10:07:23.714255 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_curated"
+10:07:23.720055 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_curated"
+10:07:23.720582 [debug] [ThreadPool]: On list_IMBA_dev_curated: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_curated"} */
+
+    show terse objects in IMBA.dev_curated
+10:07:23.720904 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:07:25.018601 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.3 seconds
+10:07:25.020627 [debug] [ThreadPool]: On list_IMBA_dev_curated: Close
+10:07:25.402241 [debug] [ThreadPool]: Acquiring new snowflake connection "list_IMBA_dev_publish"
+10:07:25.405472 [debug] [ThreadPool]: Using snowflake connection "list_IMBA_dev_publish"
+10:07:25.405737 [debug] [ThreadPool]: On list_IMBA_dev_publish: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "connection_name": "list_IMBA_dev_publish"} */
+
+    show terse objects in IMBA.dev_publish
+10:07:25.405954 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:07:26.768771 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.36 seconds
+10:07:26.770695 [debug] [ThreadPool]: On list_IMBA_dev_publish: Close
+10:07:27.146857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8ae04af50>]}
+10:07:27.147775 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+10:07:27.148280 [info ] [MainThread]: 
+10:07:27.151243 [debug] [Thread-1  ]: Began running node model.imba_project.orders_clean
+10:07:27.151676 [info ] [Thread-1  ]: 1 of 8 START table model dev_landing.orders_clean .............................. [RUN]
+10:07:27.152346 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.orders_clean"
+10:07:27.152570 [debug] [Thread-1  ]: Began compiling node model.imba_project.orders_clean
+10:07:27.152877 [debug] [Thread-1  ]: Compiling model.imba_project.orders_clean
+10:07:27.157370 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.orders_clean"
+10:07:27.158025 [debug] [Thread-1  ]: finished collecting timing info
+10:07:27.158265 [debug] [Thread-1  ]: Began executing node model.imba_project.orders_clean
+10:07:27.205220 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.orders_clean"
+10:07:27.206208 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.orders_clean"
+10:07:27.206521 [debug] [Thread-1  ]: On model.imba_project.orders_clean: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.orders_clean"} */
+
+
+      create or replace transient table IMBA.dev_landing.orders_clean  as
+      (
+
+select 
+    *
+    
+from imba.raw.orders
+      );
+10:07:27.206717 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:07:33.838958 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 6.63 seconds
+10:07:33.855579 [debug] [Thread-1  ]: finished collecting timing info
+10:07:33.855844 [debug] [Thread-1  ]: On model.imba_project.orders_clean: Close
+10:07:34.245853 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8adaa2bd0>]}
+10:07:34.246357 [info ] [Thread-1  ]: 1 of 8 OK created table model dev_landing.orders_clean ......................... [[32mSUCCESS 1[0m in 7.09s]
+10:07:34.246892 [debug] [Thread-1  ]: Finished running node model.imba_project.orders_clean
+10:07:34.247151 [debug] [Thread-1  ]: Began running node model.imba_project.orders_products_clean
+10:07:34.247815 [info ] [Thread-1  ]: 2 of 8 START table model dev_landing.orders_products_clean ..................... [RUN]
+10:07:34.248584 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.orders_products_clean"
+10:07:34.248773 [debug] [Thread-1  ]: Began compiling node model.imba_project.orders_products_clean
+10:07:34.248950 [debug] [Thread-1  ]: Compiling model.imba_project.orders_products_clean
+10:07:34.252093 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.orders_products_clean"
+10:07:34.252465 [debug] [Thread-1  ]: finished collecting timing info
+10:07:34.252651 [debug] [Thread-1  ]: Began executing node model.imba_project.orders_products_clean
+10:07:34.255152 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.orders_products_clean"
+10:07:34.255877 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.orders_products_clean"
+10:07:34.256048 [debug] [Thread-1  ]: On model.imba_project.orders_products_clean: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.orders_products_clean"} */
+
+
+      create or replace transient table IMBA.dev_landing.orders_products_clean  as
+      (
+
+select 
+    *
+
+from imba.raw.orders_products
+      );
+10:07:34.256213 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:07:39.540229 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 5.28 seconds
+10:07:39.542476 [debug] [Thread-1  ]: finished collecting timing info
+10:07:39.542758 [debug] [Thread-1  ]: On model.imba_project.orders_products_clean: Close
+10:07:39.930353 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8ac24ef50>]}
+10:07:39.931056 [info ] [Thread-1  ]: 2 of 8 OK created table model dev_landing.orders_products_clean ................ [[32mSUCCESS 1[0m in 5.68s]
+10:07:39.931668 [debug] [Thread-1  ]: Finished running node model.imba_project.orders_products_clean
+10:07:39.932011 [debug] [Thread-1  ]: Began running node model.imba_project.user_features_1
+10:07:39.932356 [info ] [Thread-1  ]: 3 of 8 START table model dev_curated.user_features_1 ........................... [RUN]
+10:07:39.933007 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.user_features_1"
+10:07:39.933687 [debug] [Thread-1  ]: Began compiling node model.imba_project.user_features_1
+10:07:39.933924 [debug] [Thread-1  ]: Compiling model.imba_project.user_features_1
+10:07:39.938378 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.user_features_1"
+10:07:39.938833 [debug] [Thread-1  ]: finished collecting timing info
+10:07:39.939066 [debug] [Thread-1  ]: Began executing node model.imba_project.user_features_1
+10:07:39.941953 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.user_features_1"
+10:07:39.943218 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.user_features_1"
+10:07:39.943442 [debug] [Thread-1  ]: On model.imba_project.user_features_1: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.user_features_1"} */
+
+
+      create or replace transient table IMBA.dev_curated.user_features_1  as
+      (
+
+select 
+    user_id,
+    max(order_number) as user_orders,
+    sum(days_since_prior_order) as user_period,
+    round(avg(days_since_prior_order),0) as user_mean_days_since_prior
+from IMBA.dev_landing.orders_clean
+group by user_id
+      );
+10:07:39.943667 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:07:42.389378 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.45 seconds
+10:07:42.391346 [debug] [Thread-1  ]: finished collecting timing info
+10:07:42.391620 [debug] [Thread-1  ]: On model.imba_project.user_features_1: Close
+10:07:42.792399 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8b083a050>]}
+10:07:42.794063 [info ] [Thread-1  ]: 3 of 8 OK created table model dev_curated.user_features_1 ...................... [[32mSUCCESS 1[0m in 2.86s]
+10:07:42.795736 [debug] [Thread-1  ]: Finished running node model.imba_project.user_features_1
+10:07:42.797332 [debug] [Thread-1  ]: Began running node model.imba_project.order_products_prior
+10:07:42.799115 [info ] [Thread-1  ]: 4 of 8 START table model dev_curated.order_products_prior ...................... [RUN]
+10:07:42.801124 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.order_products_prior"
+10:07:42.801690 [debug] [Thread-1  ]: Began compiling node model.imba_project.order_products_prior
+10:07:42.802454 [debug] [Thread-1  ]: Compiling model.imba_project.order_products_prior
+10:07:42.808912 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.order_products_prior"
+10:07:42.809282 [debug] [Thread-1  ]: finished collecting timing info
+10:07:42.809763 [debug] [Thread-1  ]: Began executing node model.imba_project.order_products_prior
+10:07:42.812073 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.order_products_prior"
+10:07:42.813094 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.order_products_prior"
+10:07:42.813253 [debug] [Thread-1  ]: On model.imba_project.order_products_prior: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.order_products_prior"} */
+
+
+      create or replace transient table IMBA.dev_curated.order_products_prior  as
+      (
+
+select 
+    a.*, 
+    b.product_id, 
+    b.add_to_cart_order,
+    b.reordered
+from IMBA.dev_landing.orders_clean a 
+join IMBA.dev_landing.orders_products_clean b
+on a.order_id = b.order_id
+where a.eval_set = 'prior'
+      );
+10:07:42.813435 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:07:51.555466 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 8.74 seconds
+10:07:51.557744 [debug] [Thread-1  ]: finished collecting timing info
+10:07:51.558077 [debug] [Thread-1  ]: On model.imba_project.order_products_prior: Close
+10:07:51.938148 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8b0874790>]}
+10:07:51.938682 [info ] [Thread-1  ]: 4 of 8 OK created table model dev_curated.order_products_prior ................. [[32mSUCCESS 1[0m in 9.14s]
+10:07:51.939236 [debug] [Thread-1  ]: Finished running node model.imba_project.order_products_prior
+10:07:51.940092 [debug] [Thread-1  ]: Began running node model.imba_project.prd_features
+10:07:51.940471 [info ] [Thread-1  ]: 5 of 8 START table model dev_curated.prd_features .............................. [RUN]
+10:07:51.941074 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.prd_features"
+10:07:51.941333 [debug] [Thread-1  ]: Began compiling node model.imba_project.prd_features
+10:07:51.941532 [debug] [Thread-1  ]: Compiling model.imba_project.prd_features
+10:07:51.945981 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.prd_features"
+10:07:51.946580 [debug] [Thread-1  ]: finished collecting timing info
+10:07:51.946802 [debug] [Thread-1  ]: Began executing node model.imba_project.prd_features
+10:07:51.949508 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.prd_features"
+10:07:51.951191 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.prd_features"
+10:07:51.951401 [debug] [Thread-1  ]: On model.imba_project.prd_features: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.prd_features"} */
+
+
+      create or replace transient table IMBA.dev_curated.prd_features  as
+      (
+
+with list
+as (select *,
+       row_number() over(partition by user_id, product_id order by order_number ASC) as product_seq_time
+    from IMBA.dev_curated.order_products_prior
+    )
+
+select 
+    product_id,
+    count(order_id) as prod_orders,
+    sum(reordered) as prod_reorders,
+    sum(case when product_seq_time = 1 then 1 else 0 end) as prod_first_orders,
+    sum(case when product_seq_time = 2 then 1 else 0 end) as prod_second_orders
+from list
+group by product_id
+      );
+10:07:51.951589 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:07:56.983876 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 5.03 seconds
+10:07:56.985714 [debug] [Thread-1  ]: finished collecting timing info
+10:07:56.986018 [debug] [Thread-1  ]: On model.imba_project.prd_features: Close
+10:07:57.373354 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8aff47910>]}
+10:07:57.374627 [info ] [Thread-1  ]: 5 of 8 OK created table model dev_curated.prd_features ......................... [[32mSUCCESS 1[0m in 5.43s]
+10:07:57.376318 [debug] [Thread-1  ]: Finished running node model.imba_project.prd_features
+10:07:57.377143 [debug] [Thread-1  ]: Began running node model.imba_project.up_features
+10:07:57.378478 [info ] [Thread-1  ]: 6 of 8 START table model dev_curated.up_features ............................... [RUN]
+10:07:57.380039 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.up_features"
+10:07:57.380698 [debug] [Thread-1  ]: Began compiling node model.imba_project.up_features
+10:07:57.381129 [debug] [Thread-1  ]: Compiling model.imba_project.up_features
+10:07:57.384808 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.up_features"
+10:07:57.385256 [debug] [Thread-1  ]: finished collecting timing info
+10:07:57.385522 [debug] [Thread-1  ]: Began executing node model.imba_project.up_features
+10:07:57.388369 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.up_features"
+10:07:57.389661 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.up_features"
+10:07:57.389847 [debug] [Thread-1  ]: On model.imba_project.up_features: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.up_features"} */
+
+
+      create or replace transient table IMBA.dev_curated.up_features  as
+      (
+
+select 
+    user_id,
+    product_id,
+    count(distinct order_id) as up_orders,
+    min(order_number) as up_first_order,
+    max(order_number) as up_last_order,
+    round(avg(add_to_cart_order),0) as up_average_cart_position
+from IMBA.dev_curated.order_products_prior 
+group by user_id, product_id
+      );
+10:07:57.390057 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:08:05.072529 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 7.68 seconds
+10:08:05.074725 [debug] [Thread-1  ]: finished collecting timing info
+10:08:05.075015 [debug] [Thread-1  ]: On model.imba_project.up_features: Close
+10:08:05.474123 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8aff176d0>]}
+10:08:05.475737 [info ] [Thread-1  ]: 6 of 8 OK created table model dev_curated.up_features .......................... [[32mSUCCESS 1[0m in 8.09s]
+10:08:05.477630 [debug] [Thread-1  ]: Finished running node model.imba_project.up_features
+10:08:05.478656 [debug] [Thread-1  ]: Began running node model.imba_project.user_features_2
+10:08:05.479814 [info ] [Thread-1  ]: 7 of 8 START table model dev_curated.user_features_2 ........................... [RUN]
+10:08:05.481073 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.user_features_2"
+10:08:05.481491 [debug] [Thread-1  ]: Began compiling node model.imba_project.user_features_2
+10:08:05.481914 [debug] [Thread-1  ]: Compiling model.imba_project.user_features_2
+10:08:05.489074 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.user_features_2"
+10:08:05.489617 [debug] [Thread-1  ]: finished collecting timing info
+10:08:05.489941 [debug] [Thread-1  ]: Began executing node model.imba_project.user_features_2
+10:08:05.494002 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.user_features_2"
+10:08:05.495469 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.user_features_2"
+10:08:05.495678 [debug] [Thread-1  ]: On model.imba_project.user_features_2: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.user_features_2"} */
+
+
+      create or replace transient table IMBA.dev_curated.user_features_2  as
+      (
+
+select 
+    user_id,
+    count(product_id) as user_total_products,
+    count(distinct product_id) as user_distinct_products,
+    round(cast(sum(reordered) as double)/cast(sum(case when order_number>1 then 1 else 0 end) as double),2) as user_reorder_ratio
+from IMBA.dev_curated.order_products_prior
+group by user_id
+      );
+10:08:05.495867 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:08:09.293499 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3.8 seconds
+10:08:09.295527 [debug] [Thread-1  ]: finished collecting timing info
+10:08:09.295828 [debug] [Thread-1  ]: On model.imba_project.user_features_2: Close
+10:08:09.709512 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8ae004650>]}
+10:08:09.710833 [info ] [Thread-1  ]: 7 of 8 OK created table model dev_curated.user_features_2 ...................... [[32mSUCCESS 1[0m in 4.23s]
+10:08:09.712405 [debug] [Thread-1  ]: Finished running node model.imba_project.user_features_2
+10:08:09.714155 [debug] [Thread-1  ]: Began running node model.imba_project.features_output
+10:08:09.714798 [info ] [Thread-1  ]: 8 of 8 START table model dev_publish.features_output ........................... [RUN]
+10:08:09.716028 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.imba_project.features_output"
+10:08:09.716455 [debug] [Thread-1  ]: Began compiling node model.imba_project.features_output
+10:08:09.716885 [debug] [Thread-1  ]: Compiling model.imba_project.features_output
+10:08:09.727422 [debug] [Thread-1  ]: Writing injected SQL for node "model.imba_project.features_output"
+10:08:09.728139 [debug] [Thread-1  ]: finished collecting timing info
+10:08:09.728492 [debug] [Thread-1  ]: Began executing node model.imba_project.features_output
+10:08:09.732180 [debug] [Thread-1  ]: Writing runtime SQL for node "model.imba_project.features_output"
+10:08:09.734641 [debug] [Thread-1  ]: Using snowflake connection "model.imba_project.features_output"
+10:08:09.734889 [debug] [Thread-1  ]: On model.imba_project.features_output: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "imba_project", "target_name": "dev", "node_id": "model.imba_project.features_output"} */
+
+
+      create or replace transient table IMBA.dev_publish.features_output  as
+      (
+
+select
+    c.user_id,
+    c.product_id,
+    c.up_orders,
+    c.up_first_order,
+    c.up_last_order,
+    c.up_average_cart_position, 
+    a.user_orders,
+    a.user_period,
+    a.user_mean_days_since_prior,
+    b.user_total_products,
+    b.user_distinct_products,
+    b.user_reorder_ratio,
+    d.prod_orders,
+    d.prod_reorders,
+    d.prod_first_orders,
+    d.prod_second_orders    
+
+from IMBA.dev_curated.user_features_1 a
+join IMBA.dev_curated.user_features_2 b
+on a.user_id = b.user_id
+right join IMBA.dev_curated.up_features c
+on a.user_id = c.user_id
+left join IMBA.dev_curated.prd_features d
+on c.product_id = d.product_id
+      );
+10:08:09.735101 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:08:16.523974 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 6.79 seconds
+10:08:16.526331 [debug] [Thread-1  ]: finished collecting timing info
+10:08:16.526632 [debug] [Thread-1  ]: On model.imba_project.features_output: Close
+10:08:16.924625 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c349c78d-b351-43a2-8abd-4c2c765cf451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8affb1b90>]}
+10:08:16.925394 [info ] [Thread-1  ]: 8 of 8 OK created table model dev_publish.features_output ...................... [[32mSUCCESS 1[0m in 7.21s]
+10:08:16.926376 [debug] [Thread-1  ]: Finished running node model.imba_project.features_output
+10:08:17.005296 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:08:17.005876 [info ] [MainThread]: 
+10:08:17.006300 [info ] [MainThread]: Finished running 8 table models in 60.35s.
+10:08:17.006637 [debug] [MainThread]: Connection 'master' was properly closed.
+10:08:17.006822 [debug] [MainThread]: Connection 'model.imba_project.features_output' was properly closed.
+10:08:17.014268 [info ] [MainThread]: 
+10:08:17.014676 [info ] [MainThread]: [32mCompleted successfully[0m
+10:08:17.015053 [info ] [MainThread]: 
+10:08:17.015334 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+10:08:17.015739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8ac2661d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8b0872bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8b0872750>]}
+
+
+============================== 2022-08-08 10:28:15.884336 | a44f37c4-84c7-42e2-a4fd-0d371080261e ==============================
+10:28:15.884351 [info ] [MainThread]: Running with dbt=1.1.1
+10:28:15.884791 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:28:15.885013 [debug] [MainThread]: Tracking: tracking
+10:28:15.885332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3006e9c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3006e9c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3006e9c310>]}
+10:28:15.910256 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+10:28:15.910582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a44f37c4-84c7-42e2-a4fd-0d371080261e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3006eae3d0>]}
+10:28:15.922761 [debug] [MainThread]: Parsing macros/overrides/generate_schema_name.sql
+10:28:15.924080 [debug] [MainThread]: Parsing macros/adapters.sql
+10:28:15.961163 [debug] [MainThread]: Parsing macros/catalog.sql
+10:28:15.963238 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+10:28:15.964302 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+10:28:15.970535 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+10:28:15.982442 [debug] [MainThread]: Parsing macros/materializations/table.sql
+10:28:15.986205 [debug] [MainThread]: Parsing macros/materializations/view.sql
+10:28:15.988039 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+10:28:15.993075 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+10:28:16.002620 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+10:28:16.013044 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+10:28:16.017456 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+10:28:16.021212 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+10:28:16.025543 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+10:28:16.027999 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+10:28:16.035179 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+10:28:16.039071 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+10:28:16.040888 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+10:28:16.042543 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+10:28:16.050799 [debug] [MainThread]: Parsing macros/etc/statement.sql
+10:28:16.056533 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+10:28:16.057463 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+10:28:16.058339 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+10:28:16.059240 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+10:28:16.060570 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+10:28:16.062773 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+10:28:16.066555 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+10:28:16.068427 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+10:28:16.071002 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+10:28:16.076280 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+10:28:16.093773 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+10:28:16.100456 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+10:28:16.102588 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+10:28:16.113721 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+10:28:16.131768 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+10:28:16.145098 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+10:28:16.160440 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+10:28:16.176464 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+10:28:16.186581 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+10:28:16.188402 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+10:28:16.193678 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+10:28:16.196857 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+10:28:16.198494 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+10:28:16.206290 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+10:28:16.208832 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+10:28:16.213148 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+10:28:16.224370 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+10:28:16.517798 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_products_clean.sql
+10:28:16.534257 [debug] [MainThread]: 1699: static parser successfully parsed landing/orders_clean.sql
+10:28:16.542801 [debug] [MainThread]: 1699: static parser successfully parsed curated/order_products_prior.sql
+10:28:16.551666 [debug] [MainThread]: 1699: static parser successfully parsed curated/up_features.sql
+10:28:16.557162 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_1.sql
+10:28:16.561728 [debug] [MainThread]: 1699: static parser successfully parsed curated/user_features_2.sql
+10:28:16.565855 [debug] [MainThread]: 1699: static parser successfully parsed curated/prd_features.sql
+10:28:16.570492 [debug] [MainThread]: 1699: static parser successfully parsed publish/features_output.sql
+10:28:16.589726 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_clean.yml' in the 'models' section of file 'models/landing/orders_clean.yml'
+10:28:16.591096 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders_products_clean.yml' in the 'models' section of file 'models/landing/orders_products_clean.yml'
+10:28:16.592216 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'prd_features.yml' in the 'models' section of file 'models/curated/prd_features.yml'
+10:28:16.593153 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_1.yml' in the 'models' section of file 'models/curated/user_features_1.yml'
+10:28:16.594055 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'up_features.yml' in the 'models' section of file 'models/curated/up_features.yml'
+10:28:16.594984 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'order_products_prior.yml' in the 'models' section of file 'models/curated/order_products_prior.yml'
+10:28:16.595949 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'user_features_2.yml' in the 'models' section of file 'models/curated/user_features_2.yml'
+10:28:16.597123 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'features_output.yml' in the 'models' section of file 'models/publish/features_output.yml'
+10:28:16.618597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a44f37c4-84c7-42e2-a4fd-0d371080261e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30204e08e0>]}
+10:28:16.627703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a44f37c4-84c7-42e2-a4fd-0d371080261e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3020ddc130>]}
+10:28:16.628087 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:28:16.628329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a44f37c4-84c7-42e2-a4fd-0d371080261e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3006eae190>]}
+10:28:16.629141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30204b50d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3020ddcf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3020ddc070>]}
+
+
+============================== 2022-08-08 10:28:19.821576 | 288ced98-dbcb-4c25-a884-df0175a4625e ==============================
+10:28:19.821601 [info ] [MainThread]: Running with dbt=1.1.1
+10:28:19.822205 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:28:19.822438 [debug] [MainThread]: Tracking: tracking
+10:28:19.822882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe679ba42b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe679ba4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe679ba4370>]}
+10:28:19.871446 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+10:28:19.871748 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+10:28:19.879463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '288ced98-dbcb-4c25-a884-df0175a4625e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe693a6f940>]}
+10:28:19.887937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '288ced98-dbcb-4c25-a884-df0175a4625e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe693a869a0>]}
+10:28:19.888590 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:28:19.889067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '288ced98-dbcb-4c25-a884-df0175a4625e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe693a86850>]}
+10:28:19.890435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe693a86ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe693a86790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe693a86400>]}
+
+
+============================== 2022-08-08 10:28:24.092680 | 68220c24-5e75-4300-8085-3cf9ba5bf2db ==============================
+10:28:24.092726 [info ] [MainThread]: Running with dbt=1.1.1
+10:28:24.093187 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+10:28:24.093346 [debug] [MainThread]: Tracking: tracking
+10:28:24.093667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99fc1cf2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99fc1cf310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99fc1cf370>]}
+10:28:24.222317 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+10:28:24.222752 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+10:28:24.244614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '68220c24-5e75-4300-8085-3cf9ba5bf2db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a1709d940>]}
+10:28:24.265485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '68220c24-5e75-4300-8085-3cf9ba5bf2db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a170b49a0>]}
+10:28:24.266321 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+10:28:24.266894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68220c24-5e75-4300-8085-3cf9ba5bf2db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a170b4850>]}
+10:28:24.269886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a170b4ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a170b4790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a170b4400>]}
+
+
+============================== 2022-10-23 22:19:11.694650 | c8fd319d-2889-4878-812b-a3ebe87fb2e7 ==============================
+22:19:11.694664 [info ] [MainThread]: Running with dbt=1.1.1
+22:19:11.695031 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+22:19:11.695201 [debug] [MainThread]: Tracking: tracking
+22:19:11.695515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efcb1783280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efcb17832e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efcb1783340>]}
+22:19:11.725688 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+22:19:11.725893 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+22:19:11.731554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8fd319d-2889-4878-812b-a3ebe87fb2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efcb1763e50>]}
+22:19:11.736972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8fd319d-2889-4878-812b-a3ebe87fb2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efccc6f3d00>]}
+22:19:11.737417 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+22:19:11.737673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8fd319d-2889-4878-812b-a3ebe87fb2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efccc6f3be0>]}
+22:19:11.738672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efccc6f3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efccc6f3c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efccc6f3850>]}
+
+
+============================== 2022-10-24 01:27:47.877578 | 09d27799-117d-47fb-8c0a-2b8e69a523d7 ==============================
+01:27:47.877593 [info ] [MainThread]: Running with dbt=1.1.1
+01:27:47.878153 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/andyyuan/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+01:27:47.878324 [debug] [MainThread]: Tracking: tracking
+01:27:47.878611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11c4a5e2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11c4a5e310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11c4a5e370>]}
+01:27:47.903519 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+01:27:47.903855 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+01:27:47.909888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09d27799-117d-47fb-8c0a-2b8e69a523d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11c4af7f10>]}
+01:27:47.915554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09d27799-117d-47fb-8c0a-2b8e69a523d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11dea54d30>]}
+01:27:47.915880 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 182 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+01:27:47.916061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09d27799-117d-47fb-8c0a-2b8e69a523d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11dea54c10>]}
+01:27:47.916856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11dea54df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11dea54ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11dea54880>]}
