@@ -3,7 +3,7 @@ imba_project:
     dev:
       account: dg06331.ap-northeast-2.aws
       database: IMBA
-      password: Yxyy820002176!
+      password: *********
       role: SYSADMIN
       schema: dev
       threads: 1
